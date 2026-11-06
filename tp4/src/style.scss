@@ -1,0 +1,51 @@
+@use "base";
+
+$accent: #075985;
+$accent-survol: #0c4a6e;
+$texte: #172337;
+$blanc: white;
+$bleu-ciel: #e0f2fe;
+$bordure: #cbd5e1;
+$espace: 1rem;
+$rayon: 0.75rem;
+
+@mixin surface($rayon: 0.75rem) {
+    background: $blanc;
+    border: 1px solid $bordure;
+    border-radius: $rayon;
+}
+
+h1 {
+    color: $accent;
+}
+
+.carte {
+    @include surface();
+    color: $texte;
+    padding: $espace * 2;
+
+    h2 {
+        color: $accent;
+    }
+}
+
+.encart {
+    @include surface(0);
+    padding: $espace;
+}
+
+.bouton {
+    background: $accent;
+    color: $blanc;
+}
+
+.bouton-blanc {
+    background: $blanc;
+    color: $accent;
+    border-color: $accent;
+
+    &:hover,
+    &:focus {
+        background: $bleu-ciel;
+    }
+}

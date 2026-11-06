@@ -1,0 +1,24 @@
+{
+  "name": "tp_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "v:sass": "sass --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugomendes-dev/SASS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hugomendes-dev/SASS/issues"
+  },
+  "homepage": "https://github.com/hugomendes-dev/SASS#readme",
+  "devDependencies": {
+    "sass": "1.108.0"
+  }
+}

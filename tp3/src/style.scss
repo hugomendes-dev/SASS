@@ -1,0 +1,40 @@
+@use "base";
+
+$accent: #075985;
+$accent-survol: #0c4a6e;
+$texte: #172337;
+$blanc: white;
+$bleu-ciel: #e0f2fe;
+$espace: 1rem;
+$rayon: 0.75rem;
+
+h1 {
+    color: $accent;
+}
+
+.carte {
+    background: $blanc;
+    color: $texte;
+    padding: $espace * 2;
+    border-radius: $rayon;
+
+    h2 {
+        color: $accent;
+    }
+}
+
+.bouton {
+    background: $accent;
+    color: $blanc;
+}
+
+.bouton-blanc {
+    background: $blanc;
+    color: $accent;
+    border-color: $accent;
+
+    &:hover,
+    &:focus {
+        background: $bleu-ciel;
+    }
+}

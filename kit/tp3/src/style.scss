@@ -1,0 +1,18 @@
+@use "base";
+
+// Choix communs de la charte. Ces variables disparaissent après compilation.
+$accent: #075985;
+$accent-survol: #0c4a6e;
+$texte: #172337;
+$espace: 1rem;
+$rayon: 0.75rem;
+h1 { color: $accent; }
+.carte {
+  background: white;
+  color: $texte;
+  padding: $espace * 2;
+  border-radius: $rayon;
+}
+.bouton { background: $accent; color: white; }
+// TODO : imbriquer h2 et p dans .carte.
+// TODO : ajouter &:hover, &:focus-visible et &.secondaire dans .bouton.

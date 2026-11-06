@@ -1,0 +1,22 @@
+@use "base";
+
+$accent: #075985;
+$texte: #172337;
+$espace: 1rem;
+$rayon: 0.75rem;
+
+h1 {
+    color: $accent;
+}
+
+.carte {
+    background: white;
+    color: $texte;
+    padding: $espace * 2;
+    border-radius: $rayon;
+}
+
+.bouton {
+    background: $accent;
+    color: white;
+}
